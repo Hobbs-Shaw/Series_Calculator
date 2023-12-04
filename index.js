@@ -1,8 +1,15 @@
 let n = Number(prompt('Emter a number'));
-if(n>0){
-    //(n*(n+1))/2
-    let result = (n*(n+1))/2;
-    alert('Result: '+result);
-}else{
-    alert('Result: 0');
+let result = calculate(n)
+alert('Result: '+result);
+
+function calculate(n){
+    
+    if(n>0){
+        //(n*(n+1))/2
+        let c = (n*(n+1))/2;
+        return c;
+    }else{
+        return 0;
+    }
+    
 }
